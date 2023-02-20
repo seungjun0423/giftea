@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from './banner';
 import Funding from './funding';
 
-function Index() {
+function Main() {
   return (
     <div className="index">
       <Banner />
@@ -11,4 +11,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Main;
