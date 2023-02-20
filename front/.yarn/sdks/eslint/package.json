@@ -1,6 +1,10 @@
 {
   "name": "eslint",
+<<<<<<< HEAD
   "version": "8.34.0-sdk",
+=======
+  "version": "8.33.0-sdk",
+>>>>>>> feature/front-router-setup
   "main": "./lib/api.js",
   "type": "commonjs"
 }
