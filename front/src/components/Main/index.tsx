@@ -4,11 +4,9 @@ import Funding from './funding';
 
 function Index() {
   return (
-    <div className="Index">
-      <header>
-        <Banner />
-        <Funding />
-      </header>
+    <div className="index">
+      <Banner />
+      <Funding />
     </div>
   );
 }

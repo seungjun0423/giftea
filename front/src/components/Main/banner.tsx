@@ -2,8 +2,8 @@ import React from 'react';
 
 function Banner() {
   return (
-    <div className="Banner">
-      <h1>Funding</h1>
+    <div className="banner">
+      <h1>Banner</h1>
     </div>
   );
 }
