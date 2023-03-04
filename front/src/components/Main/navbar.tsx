@@ -15,10 +15,7 @@ function Navbar() {
             <div className="navbar_menu">마이페이지</div>
           </li>
           <li>
-            <div className="navbar_menu">펀딩중</div>
-          </li>
-          <li>
-            <div className="navbar_menu">펀딩 성공</div>
+            <div className="navbar_menu2">펀딩 만들기</div>
           </li>
         </ul>
       </div>
