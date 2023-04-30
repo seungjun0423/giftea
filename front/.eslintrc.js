@@ -54,6 +54,7 @@ module.exports = {
       }
     ],
     'comma-dangle': ['error', 'never'],
-    'no-undef': 'off'
+    'no-undef': 'off',
+    'react/jsx-one-expression-per-line': ['off']
   }
 };
