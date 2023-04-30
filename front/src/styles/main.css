@@ -1,27 +1,19 @@
 .main_funding_title {
+  width: 330px;
   font-size: 24px;
-  margin-left: 171px;
+  margin:  20px auto;
+
 }
 
 .main_funding_wrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /*justify-content: center;*/
-  flex-wrap: wrap;
-  margin: 0 171px;
-  /* margin: 0 auto; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .main_funding_item {
   flex: 0 0 auto;
   margin-bottom: 61px;
-  margin-right: 55px;
-  /* margin: 0 auto 61px auto; */
 }
-
-
 
 .main_funding_item_title {
   font-size: 17px;
@@ -42,7 +34,7 @@
 
 .main_funding_item_image {
   display: flex;
-   justify-content: center;
+  justify-content: center;
   margin: auto;
   width: 330px;
   height: 188px;
@@ -50,92 +42,18 @@
   filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
   .main_funding_wrapper {
-    justify-content: center;
-    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .main_funding_item {
-    margin-bottom: 61px;
-     margin-right: 0px;
-    /* margin: 0 auto 61px auto; */
+  .main_funding_title {
+    text-align: center;
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 720px) {
+@media only screen and (min-width: 721px) and (max-width: 1024px) {
   .main_funding_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* margin: 0 171px; */
-    margin: 0 auto;
-  }
-
-  .main_funding_item {
-    flex: 0 0 auto;
-    margin-bottom: 61px;
-    margin-right: 0;
-    /* margin-right: 55px; */
-    /* margin: 0 auto 61px auto; */
-  }
-
-  .main_funding_item_image {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 220px;
-    height: 125px;
-    border-radius: 8px;
-    filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
-  }
-
-
-  /*.main_funding_item:nth-child(2n) {*/
-  /*  margin-right: 0px;*/
-  /*}*/
-}
-
-@media only screen and (min-width: 720px) and (max-width: 1024px){
-  .main_funding_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* margin: 0 171px; */
-    margin: 0 auto;
-  }
-
-  .main_funding_item {
-    flex: 0 0 auto;
-    margin-bottom: 61px;
-    margin-right: 0;
-    /* margin-right: 55px; */
-    /* margin: 0 auto 61px auto; */
-  }
-
-}
-
-@media only screen and (min-width: 1024px) {
-  .main_funding_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* margin: 0 171px; */
-    margin: 0 auto;
-  }
-
-  .main_funding_item {
-    flex: 0 0 auto;
-    margin-bottom: 61px;
-    margin-right: 0;
-    /* margin-right: 55px; */
-    /* margin: 0 auto 61px auto; */
-  }
-
-  .main_funding_item:nth-child(3n) {
-    margin-right: 0;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

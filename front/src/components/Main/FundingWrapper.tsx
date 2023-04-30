@@ -4,7 +4,9 @@ import FundingItem from './FundingItem';
 function FundingWrapper() {
   return (
     <div className="main_funding">
-      <h1 className="main_funding_title">펀딩중</h1>
+      <div className="main_funding_wrapper">
+        <h1 className="main_funding_title">펀딩중</h1>
+      </div>
       <div className="main_funding_wrapper">
         {fundingItems.map((item) => (
           <FundingItem item={item} />
