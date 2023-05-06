@@ -1,12 +1,12 @@
 import React from 'react';
 import Banner from './banner';
-import Funding from './funding';
+import FundingWrapper from './FundingWrapper';
 
 function Main() {
   return (
     <div className="index">
       <Banner />
-      <Funding />
+      <FundingWrapper />
     </div>
   );
 }
