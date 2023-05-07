@@ -53,6 +53,8 @@ module.exports = {
         argsIgnorePattern: '^_'
       }
     ],
-    'comma-dangle': ['error', 'never']
+    'comma-dangle': ['error', 'never'],
+    'no-undef': 'off',
+    'react/jsx-one-expression-per-line': ['off']
   }
 };
