@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from './banner';
-import Funding from './funding';
+import FundingWrapper from './FundingWrapper';
 import Navbar from './navbar';
 
 function Main() {
@@ -8,7 +8,7 @@ function Main() {
     <div className="index">
       <Navbar />
       <Banner />
-      <Funding />
+      <FundingWrapper />
     </div>
   );
 }
