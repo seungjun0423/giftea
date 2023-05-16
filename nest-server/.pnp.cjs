@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/testing", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:9.4.0"],\
             ["@types/express", "npm:4.17.17"],\
             ["@types/jest", "npm:29.5.0"],\
+            ["@types/js-yaml", "npm:4.0.5"],\
             ["@types/node", "npm:18.15.11"],\
             ["@types/supertest", "npm:2.0.12"],\
             ["@typescript-eslint/eslint-plugin", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:5.59.2"],\
@@ -46,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.40.0"],\
             ["eslint-plugin-prettier", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:4.2.1"],\
             ["jest", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:29.5.0"],\
+            ["js-yaml", "npm:4.1.0"],\
             ["prettier", "npm:2.8.8"],\
             ["prisma", "npm:4.13.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
@@ -2055,6 +2057,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:29.5.0"],\
             ["expect", "npm:29.5.0"],\
             ["pretty-format", "npm:29.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/js-yaml", [\
+        ["npm:4.0.5", {\
+          "packageLocation": "./.yarn/cache/@types-js-yaml-npm-4.0.5-bb64d71397-7dcac8c50f.zip/node_modules/@types/js-yaml/",\
+          "packageDependencies": [\
+            ["@types/js-yaml", "npm:4.0.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6666,6 +6677,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/testing", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:9.4.0"],\
             ["@types/express", "npm:4.17.17"],\
             ["@types/jest", "npm:29.5.0"],\
+            ["@types/js-yaml", "npm:4.0.5"],\
             ["@types/node", "npm:18.15.11"],\
             ["@types/supertest", "npm:2.0.12"],\
             ["@typescript-eslint/eslint-plugin", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:5.59.2"],\
@@ -6674,6 +6686,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.40.0"],\
             ["eslint-plugin-prettier", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:4.2.1"],\
             ["jest", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:29.5.0"],\
+            ["js-yaml", "npm:4.1.0"],\
             ["prettier", "npm:2.8.8"],\
             ["prisma", "npm:4.13.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
