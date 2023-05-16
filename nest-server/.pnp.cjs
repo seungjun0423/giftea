@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/platform-express", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:9.4.0"],\
             ["@nestjs/schematics", "virtual:d67477dbe249feb9317489b97319db1b39f3719e1278c3183f6ae72ab9529490990a61671121fcc185d65d3d566b7f77a844896e4d377fd97137a5c73de4f57d#npm:9.1.0"],\
             ["@nestjs/testing", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:9.4.0"],\
+            ["@types/axios", "npm:0.14.0"],\
             ["@types/express", "npm:4.17.17"],\
             ["@types/jest", "npm:29.5.0"],\
             ["@types/node", "npm:18.15.11"],\
@@ -1462,7 +1463,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@nestjs/axios", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:2.0.0"],\
             ["@nestjs/common", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:9.4.0"],\
-            ["@types/axios", null],\
+            ["@types/axios", "npm:0.14.0"],\
             ["@types/nestjs__common", null],\
             ["@types/reflect-metadata", null],\
             ["@types/rxjs", null],\
@@ -1839,6 +1840,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@tsconfig-node16-npm-1.0.3-6a4a30eda2-3a8b657dd0.zip/node_modules/@tsconfig/node16/",\
           "packageDependencies": [\
             ["@tsconfig/node16", "npm:1.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/axios", [\
+        ["npm:0.14.0", {\
+          "packageLocation": "./.yarn/cache/@types-axios-npm-0.14.0-42f41917ea-12a230b940.zip/node_modules/@types/axios/",\
+          "packageDependencies": [\
+            ["@types/axios", "npm:0.14.0"],\
+            ["axios", "npm:1.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6633,6 +6644,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/platform-express", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:9.4.0"],\
             ["@nestjs/schematics", "virtual:d67477dbe249feb9317489b97319db1b39f3719e1278c3183f6ae72ab9529490990a61671121fcc185d65d3d566b7f77a844896e4d377fd97137a5c73de4f57d#npm:9.1.0"],\
             ["@nestjs/testing", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:9.4.0"],\
+            ["@types/axios", "npm:0.14.0"],\
             ["@types/express", "npm:4.17.17"],\
             ["@types/jest", "npm:29.5.0"],\
             ["@types/node", "npm:18.15.11"],\
