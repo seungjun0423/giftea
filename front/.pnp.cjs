@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:0487b1b8263ee74b6a800d7d32396247265bb66793913170b66fbaba014393ed5e7147a33f4bbb04ae9c659e18794d2a28c1045211d073c2ec3f37a52f31b1e7#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:0487b1b8263ee74b6a800d7d32396247265bb66793913170b66fbaba014393ed5e7147a33f4bbb04ae9c659e18794d2a28c1045211d073c2ec3f37a52f31b1e7#npm:13.5.0"],\
+            ["@types/axios", "npm:0.14.0"],\
             ["@types/eslint", "npm:8.21.1"],\
             ["@types/jest", "npm:29.4.0"],\
             ["@types/node", "npm:18.14.0"],\
@@ -4241,6 +4242,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-aria-query-npm-5.0.1-5c01a56741-69fd7cceb6.zip/node_modules/@types/aria-query/",\
           "packageDependencies": [\
             ["@types/aria-query", "npm:5.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/axios", [\
+        ["npm:0.14.0", {\
+          "packageLocation": "./.yarn/cache/@types-axios-npm-0.14.0-42f41917ea-12a230b940.zip/node_modules/@types/axios/",\
+          "packageDependencies": [\
+            ["@types/axios", "npm:0.14.0"],\
+            ["axios", "npm:1.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9276,6 +9287,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:0487b1b8263ee74b6a800d7d32396247265bb66793913170b66fbaba014393ed5e7147a33f4bbb04ae9c659e18794d2a28c1045211d073c2ec3f37a52f31b1e7#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:0487b1b8263ee74b6a800d7d32396247265bb66793913170b66fbaba014393ed5e7147a33f4bbb04ae9c659e18794d2a28c1045211d073c2ec3f37a52f31b1e7#npm:13.5.0"],\
+            ["@types/axios", "npm:0.14.0"],\
             ["@types/eslint", "npm:8.21.1"],\
             ["@types/jest", "npm:29.4.0"],\
             ["@types/node", "npm:18.14.0"],\

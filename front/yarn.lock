@@ -2536,6 +2536,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/axios@npm:^0.14.0":
+  version: 0.14.0
+  resolution: "@types/axios@npm:0.14.0"
+  dependencies:
+    axios: "*"
+  checksum: 12a230b9404055d81804cb57fe4739b2317111b28a39e2477b2513250e8b85725e6f6ce509fc2a9494a6da60facb8d80df875fcd747f62f6c3abebc7db60ae66
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.14":
   version: 7.20.0
   resolution: "@types/babel__core@npm:7.20.0"
@@ -3701,7 +3710,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.4.0":
+"axios@npm:*, axios@npm:^1.4.0":
   version: 1.4.0
   resolution: "axios@npm:1.4.0"
   dependencies:
@@ -6379,6 +6388,7 @@ __metadata:
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
     "@testing-library/user-event": ^13.5.0
+    "@types/axios": ^0.14.0
     "@types/eslint": ^8
     "@types/jest": ^29.4.0
     "@types/node": ^18.13.0
