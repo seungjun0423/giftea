@@ -6,7 +6,7 @@ async function main() {
 	
 	const app = await NestFactory.create(AppModule);
 	const configService = app.get(ConfigService);
-	const port = configService.get('NODE_SERVER_PORT');
+	const port = configService.get<string>('server.port');
 
   await app.listen(port);
 }
