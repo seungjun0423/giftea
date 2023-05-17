@@ -43,13 +43,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/supertest", "npm:2.0.12"],\
             ["@typescript-eslint/eslint-plugin", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:5.59.2"],\
             ["@typescript-eslint/parser", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:5.59.2"],\
+            ["axios", "npm:1.4.0"],\
             ["cpx", "npm:1.5.0"],\
             ["eslint", "npm:8.40.0"],\
             ["eslint-plugin-prettier", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:4.2.1"],\
             ["jest", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:29.5.0"],\
             ["js-yaml", "npm:4.1.0"],\
             ["prettier", "npm:2.8.8"],\
-            ["prisma", "npm:4.13.0"],\
+            ["prisma", "npm:4.14.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.8.1"],\
             ["source-map-support", "npm:0.5.21"],\
@@ -1468,7 +1469,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/nestjs__common", null],\
             ["@types/reflect-metadata", null],\
             ["@types/rxjs", null],\
-            ["axios", null],\
+            ["axios", "npm:1.4.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.8.1"]\
           ],\
@@ -1797,10 +1798,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@prisma/engines", [\
-        ["npm:4.13.0", {\
-          "packageLocation": "./.yarn/unplugged/@prisma-engines-npm-4.13.0-22f57d71d8/node_modules/@prisma/engines/",\
+        ["npm:4.14.0", {\
+          "packageLocation": "./.yarn/unplugged/@prisma-engines-npm-4.14.0-b30513118e/node_modules/@prisma/engines/",\
           "packageDependencies": [\
-            ["@prisma/engines", "npm:4.13.0"]\
+            ["@prisma/engines", "npm:4.14.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3047,6 +3048,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/atob-npm-2.1.2-bcb583261e-dfeeeb7009.zip/node_modules/atob/",\
           "packageDependencies": [\
             ["atob", "npm:2.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["axios", [\
+        ["npm:1.4.0", {\
+          "packageLocation": "./.yarn/cache/axios-npm-1.4.0-4d7ce8ca3e-7fb6a4313b.zip/node_modules/axios/",\
+          "packageDependencies": [\
+            ["axios", "npm:1.4.0"],\
+            ["follow-redirects", "virtual:4d7ce8ca3e1e44d82523fba2ad95e1be18c4e9f8dec6d551377587540da3ed75bd8bd3e812280309a3b90cfdb0560f076f3552a20839f7f15665207a4fbd588a#npm:1.15.2"],\
+            ["form-data", "npm:4.0.0"],\
+            ["proxy-from-env", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5013,6 +5026,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/flatted-npm-3.2.7-0da10b7c56-427633049d.zip/node_modules/flatted/",\
           "packageDependencies": [\
             ["flatted", "npm:3.2.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["follow-redirects", [\
+        ["npm:1.15.2", {\
+          "packageLocation": "./.yarn/cache/follow-redirects-npm-1.15.2-1ec1dd82be-faa66059b6.zip/node_modules/follow-redirects/",\
+          "packageDependencies": [\
+            ["follow-redirects", "npm:1.15.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4d7ce8ca3e1e44d82523fba2ad95e1be18c4e9f8dec6d551377587540da3ed75bd8bd3e812280309a3b90cfdb0560f076f3552a20839f7f15665207a4fbd588a#npm:1.15.2", {\
+          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-359bc4c55c/0/cache/follow-redirects-npm-1.15.2-1ec1dd82be-faa66059b6.zip/node_modules/follow-redirects/",\
+          "packageDependencies": [\
+            ["follow-redirects", "virtual:4d7ce8ca3e1e44d82523fba2ad95e1be18c4e9f8dec6d551377587540da3ed75bd8bd3e812280309a3b90cfdb0560f076f3552a20839f7f15665207a4fbd588a#npm:1.15.2"],\
+            ["@types/debug", null],\
+            ["debug", null]\
+          ],\
+          "packagePeers": [\
+            "@types/debug",\
+            "debug"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7535,13 +7570,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/supertest", "npm:2.0.12"],\
             ["@typescript-eslint/eslint-plugin", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:5.59.2"],\
             ["@typescript-eslint/parser", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:5.59.2"],\
+            ["axios", "npm:1.4.0"],\
             ["cpx", "npm:1.5.0"],\
             ["eslint", "npm:8.40.0"],\
             ["eslint-plugin-prettier", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:4.2.1"],\
             ["jest", "virtual:495d6d53ecbcbaaaf18ef7165de707055b653eb7396c51607862e4f26a116b288a1a7402cd826af3b7483b5a48373fb3360456019bfea59ba545b61f3fc3024d#npm:29.5.0"],\
             ["js-yaml", "npm:4.1.0"],\
             ["prettier", "npm:2.8.8"],\
-            ["prisma", "npm:4.13.0"],\
+            ["prisma", "npm:4.14.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rxjs", "npm:7.8.1"],\
             ["source-map-support", "npm:0.5.21"],\
@@ -8115,11 +8151,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prisma", [\
-        ["npm:4.13.0", {\
-          "packageLocation": "./.yarn/unplugged/prisma-npm-4.13.0-59037c45c5/node_modules/prisma/",\
+        ["npm:4.14.0", {\
+          "packageLocation": "./.yarn/unplugged/prisma-npm-4.14.0-d2686760fc/node_modules/prisma/",\
           "packageDependencies": [\
-            ["prisma", "npm:4.13.0"],\
-            ["@prisma/engines", "npm:4.13.0"]\
+            ["prisma", "npm:4.14.0"],\
+            ["@prisma/engines", "npm:4.14.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8184,6 +8220,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["proxy-addr", "npm:2.0.7"],\
             ["forwarded", "npm:0.2.0"],\
             ["ipaddr.js", "npm:1.9.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["proxy-from-env", [\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/proxy-from-env-npm-1.1.0-c13d07f26b-ed7fcc2ba0.zip/node_modules/proxy-from-env/",\
+          "packageDependencies": [\
+            ["proxy-from-env", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
