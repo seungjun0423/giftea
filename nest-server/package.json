@@ -6,6 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+		"migrate":"prisma migrate dev",
     "copy-files": "cpx \"src/config/*.yaml\" dist/config",
     "build": "yarn copy-files && nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
