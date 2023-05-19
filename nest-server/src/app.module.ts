@@ -8,6 +8,7 @@ import { LoggerMiddleware } from './middleware/logger.middleware';
 import { PrismaService } from './prisma/prisma.service';
 import { UsersService } from './users/users.service';
 import { UsersController } from './users/users.controller';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [ 
@@ -15,7 +16,7 @@ import { UsersController } from './users/users.controller';
 			load:[config],
 			isGlobal:true
 		}), 
-		UsersModule ],
+		UsersModule, AuthModule ],
 
   controllers: [AppController, UsersController],
 	
