@@ -19,5 +19,15 @@ model User {
 	age Int
 	phone Int
   email String  @unique
-	wishItems String
+	wishList WishList[]
+}
+
+model WishList {
+	id    Int     @default(autoincrement()) @id
+	userId Int
+	item String
+	price Int
+	description String
+	url String
+  user   User  @relation(fields: [userId], references: [id])
 }
