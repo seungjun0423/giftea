@@ -9,7 +9,12 @@ function Navbar() {
         <div className="navbar_menu">
           <div className="navbar_img_set">
             <div className="navbar_img">img1</div>
-            <div className="navbar_menu1">로그인</div>
+            <div 
+							className="navbar_menu1"
+							onClick={()=>{return <LoginModal/>}}
+						>
+							로그인
+						</div>
           </div>
           <div className="navbar_img_set">
             <div className="navbar_img">img2</div>
