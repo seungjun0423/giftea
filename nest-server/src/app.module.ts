@@ -6,17 +6,20 @@ import { UsersModule } from './users/users.module';
 import config from 'src/config/config';
 import { LoggerMiddleware } from './middleware/logger.middleware';
 import { PrismaService } from './prisma/prisma.service';
+import { UsersService } from './users/users.service';
+import { UsersController } from './users/users.controller';
 
 @Module({
   imports: [ 
 		ConfigModule.forRoot({
 			load:[config],
 			isGlobal:true
-		}), UsersModule ],
+		}), 
+		UsersModule ],
 
-  controllers: [AppController],
+  controllers: [AppController, UsersController],
 	
-  providers: [AppService, PrismaService],
+  providers: [AppService, UsersService,PrismaService],
 })
 export class AppModule implements NestModule{
 	configure(consumer: MiddlewareConsumer) {
