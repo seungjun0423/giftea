@@ -22,8 +22,8 @@ export class UsersController {
 		return this.usersService.findUser(id);
 	}
 
-	@Put()
-	async updateUser(@Param('id') id: number,@Body() data: User): Promise<User | null> {
+	@Put(':id')
+	async updateUser(@Param('id') id: number, @Body() data: User): Promise<User | null> {
 		return this.usersService.updateUser(id, data.name, data.gender, data.age, data.phone, data.email);
 	}
 
