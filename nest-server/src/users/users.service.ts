@@ -17,4 +17,10 @@ export class UsersService {
 		return this.prismaService
 			.user.findUnique({ where: {id: Number(id)} });
 	}
+
+	/** 단일 사용자 데이터 삭제 */
+	async deleteUser(id:number): Promise<User | null> {
+		return this.prismaService
+		.user.delete({ where: {id: Number(id)} });
+	}
 }
