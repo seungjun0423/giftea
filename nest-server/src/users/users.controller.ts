@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { CreateUsersDto } from './CreateUsersDto';
 import { UsersService } from './users.service';
 import { User } from '@prisma';
@@ -6,9 +6,14 @@ import { User } from '@prisma';
 @Controller('api/v1/users')
 export class UsersController {
 	constructor(private usersService: UsersService){}
-	
+
 	@Get()
 	async findAllUsers(): Promise<User[]> {
-		return this.usersService.findAllUsers()
+		return this.usersService.findAllUsers();
+	}
+
+	@Get(':id')
+	async findUser(@Param('id') id: number): Promise<User | null> {
+		return this.usersService.findUser(id);
 	}
 }
