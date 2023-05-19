@@ -104,13 +104,22 @@ exports.Prisma.UserScalarFieldEnum = {
   gender: 'gender',
   age: 'age',
   phone: 'phone',
-  email: 'email',
-  wishItems: 'wishItems'
+  email: 'email'
+};
+
+exports.Prisma.WishListScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  item: 'item',
+  price: 'price',
+  description: 'description',
+  url: 'url'
 };
 
 
 exports.Prisma.ModelName = {
-  User: 'User'
+  User: 'User',
+  WishList: 'WishList'
 };
 
 /**
