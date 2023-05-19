@@ -8,9 +8,10 @@ type Item = {
 
 type FundingItemProps = {
   item: Item;
+  itemKey: string;
 };
 
-export default function FundingItem({ item }: FundingItemProps) {
+export default function FundingItem({ item, itemKey }: FundingItemProps) {
   const { title, imgUrl, percentage } = item;
   return (
     <div className="main_funding_item">
