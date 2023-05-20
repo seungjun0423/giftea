@@ -1,3 +1,10 @@
+body{
+	position: fixed;
+  width: 100%;
+  height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
 .login_modal {
 	display: grid;
 	place-items: center;
@@ -6,6 +13,28 @@
 	background: #FFFFFF;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 	margin:auto;
+
+	position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.login_modal .close_btn {
+	margin-left: 500px;
+	width: 18.08px;
+	height: 26.9px;
+	font-weight: 500;
+	font-size: 25px;
+	color: #1E1E1E;
+}
+
+.login_modal .login_logo {
+	margin-left: 90px;
+	width: 294px;
+	height: 274px;
 }
 
 .login_modal .input_box {
@@ -14,6 +43,12 @@
 	background: #FFFFFF;
 	border: 1px solid #000000;
 	border-radius: 12px;
+	
+	font-weight: 200;
+	font-size: 20px;
+	color: #918E83;
+	padding-left: 8.61px;
+
 }
 
 .login_modal .login_btn {
@@ -23,6 +58,23 @@
 	border: 1px solid #E1A3FF;
 	border-radius: 20px;
 	box-shadow: 5px 5px 5px #ABDDD8;
+
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 22px;
+	color: rgba(0, 0, 0, 0.55);
+}
+
+.login_modal .login_btn ::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 100%; /* 그림자의 폭과 높이를 수정하여 일치시킬 수 있음 */
+  height: 100%; /* 그림자의 폭과 높이를 수정하여 일치시킬 수 있음 */
+  border: solid 2px black; /* 그림자의 border */
+  transform: translate(-5px, -5px); /* 이 숫자를 변경하여 그림자가 있는 곳으로 이동 */
+  z-index: -1; /* 이미지를 박스 뒤로 이동 */
 }
 
 .login_modal .wrapper {

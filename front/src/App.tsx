@@ -11,12 +11,12 @@ import 'styles/index.css';
 function App() {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
 			<LoginModal />
     </>
   );

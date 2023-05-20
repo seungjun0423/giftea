@@ -9,13 +9,13 @@ function LoginModal() {
 				x
 			</div>
 
-			<img src={login_logo}>
+			<img className='login_logo' src={login_logo}>
 			</img>
 
-			<input className='input_box' type={'email'}>
+			<input className='input_box' type={'email'} placeholder={'이메일'}>
 			</input>
 
-			<input className='input_box' type={'password'}>
+			<input className='input_box' type={'password'} placeholder={'비밀번호'}>
 			</input>
 
 			<button className='login_btn'>
@@ -29,6 +29,15 @@ function LoginModal() {
 					|
 				<div className='find_id_password'>
 					아이디/비밀번호 찾기
+				</div>
+			</div>
+			<div className='under_line'>
+				
+			</div>
+
+			<div className='oauth_wrapper'>
+				<div className='kakao_oauth'>
+
 				</div>
 			</div>
 
