@@ -1,0 +1,34 @@
+.login_modal {
+	display: grid;
+	place-items: center;
+	width: 597.39px;
+	height: 791.91px;
+	background: #FFFFFF;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+	margin:auto;
+}
+
+.login_modal .input_box {
+	width: 437.28px;
+	height: 56.32px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	border-radius: 12px;
+}
+
+.login_modal .login_btn {
+	width: 383.91px;
+	height: 43.71px;
+	background: #F7F7F7;
+	border: 1px solid #E1A3FF;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #ABDDD8;
+}
+
+.login_modal .wrapper {
+	display: flex;
+	justify-content: center;
+	width: 323px;
+	height: 29px;
+	gap:20px;
+}
