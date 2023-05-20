@@ -1,5 +1,6 @@
 import React from 'react';
 import 'styles/login.css';
+import login_logo from 'img/login_logo.svg';
 
 function LoginModal() {
   return (
@@ -8,7 +9,7 @@ function LoginModal() {
 				x
 			</div>
 
-			<img>
+			<img src={login_logo}>
 			</img>
 
 			<input className='input_box' type={'email'}>
