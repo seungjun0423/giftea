@@ -1,9 +1,16 @@
 import React from 'react';
-import 'styles/login.css';
-import login_logo from 'img/login_logo.svg';
 
-function LoginModal() {
-  return (
+import kakao_login from 'img/kakao_login.png';
+import login_logo from 'img/login_logo.svg';
+import 'styles/login.css';
+
+type onOff = {
+	isOpenLoginModal: boolean
+}
+
+function LoginModal({isOpenLoginModal}: onOff) {
+	
+  return isOpenLoginModal ?(
 		<div className='login_modal'>
 			<div className='close_btn'>
 				x
@@ -32,17 +39,18 @@ function LoginModal() {
 				</div>
 			</div>
 			<div className='under_line'>
-				
+				<div className='line' ></div>
+				<div className='line_text'>or</div>
+				<div className='line'></div>
 			</div>
 
 			<div className='oauth_wrapper'>
-				<div className='kakao_oauth'>
-
-				</div>
+				<img className='kakao_oauth' src={kakao_login}>
+				</img>
 			</div>
 
 		</div>
-  );
+  ):<></>;
 }
 
 export default LoginModal;
