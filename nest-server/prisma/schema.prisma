@@ -28,6 +28,7 @@ model WishList {
 	item String
 	price Int
 	description String
-	url String
+	img String
+	buyUrl String
   user   User  @relation(fields: [userId], references: [id])
 }

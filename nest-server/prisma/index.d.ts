@@ -35,7 +35,8 @@ export type WishList = {
   item: string
   price: number
   description: string
-  url: string
+  img: string
+  buyUrl: string
 }
 
 
@@ -1890,7 +1891,8 @@ export namespace Prisma {
     item: string | null
     price: number | null
     description: string | null
-    url: string | null
+    img: string | null
+    buyUrl: string | null
   }
 
   export type WishListMaxAggregateOutputType = {
@@ -1899,7 +1901,8 @@ export namespace Prisma {
     item: string | null
     price: number | null
     description: string | null
-    url: string | null
+    img: string | null
+    buyUrl: string | null
   }
 
   export type WishListCountAggregateOutputType = {
@@ -1908,7 +1911,8 @@ export namespace Prisma {
     item: number
     price: number
     description: number
-    url: number
+    img: number
+    buyUrl: number
     _all: number
   }
 
@@ -1931,7 +1935,8 @@ export namespace Prisma {
     item?: true
     price?: true
     description?: true
-    url?: true
+    img?: true
+    buyUrl?: true
   }
 
   export type WishListMaxAggregateInputType = {
@@ -1940,7 +1945,8 @@ export namespace Prisma {
     item?: true
     price?: true
     description?: true
-    url?: true
+    img?: true
+    buyUrl?: true
   }
 
   export type WishListCountAggregateInputType = {
@@ -1949,7 +1955,8 @@ export namespace Prisma {
     item?: true
     price?: true
     description?: true
-    url?: true
+    img?: true
+    buyUrl?: true
     _all?: true
   }
 
@@ -2046,7 +2053,8 @@ export namespace Prisma {
     item: string
     price: number
     description: string
-    url: string
+    img: string
+    buyUrl: string
     _count: WishListCountAggregateOutputType | null
     _avg: WishListAvgAggregateOutputType | null
     _sum: WishListSumAggregateOutputType | null
@@ -2074,7 +2082,8 @@ export namespace Prisma {
     item?: boolean
     price?: boolean
     description?: boolean
-    url?: boolean
+    img?: boolean
+    buyUrl?: boolean
     user?: boolean | UserArgs
   }
 
@@ -2883,7 +2892,8 @@ export namespace Prisma {
     item: 'item',
     price: 'price',
     description: 'description',
-    url: 'url'
+    img: 'img',
+    buyUrl: 'buyUrl'
   };
 
   export type WishListScalarFieldEnum = (typeof WishListScalarFieldEnum)[keyof typeof WishListScalarFieldEnum]
@@ -2957,7 +2967,8 @@ export namespace Prisma {
     item?: StringFilter | string
     price?: IntFilter | number
     description?: StringFilter | string
-    url?: StringFilter | string
+    img?: StringFilter | string
+    buyUrl?: StringFilter | string
     user?: XOR<UserRelationFilter, UserWhereInput>
   }
 
@@ -2967,7 +2978,8 @@ export namespace Prisma {
     item?: SortOrder
     price?: SortOrder
     description?: SortOrder
-    url?: SortOrder
+    img?: SortOrder
+    buyUrl?: SortOrder
     user?: UserOrderByWithRelationInput
   }
 
@@ -2981,7 +2993,8 @@ export namespace Prisma {
     item?: SortOrder
     price?: SortOrder
     description?: SortOrder
-    url?: SortOrder
+    img?: SortOrder
+    buyUrl?: SortOrder
     _count?: WishListCountOrderByAggregateInput
     _avg?: WishListAvgOrderByAggregateInput
     _max?: WishListMaxOrderByAggregateInput
@@ -2998,7 +3011,8 @@ export namespace Prisma {
     item?: StringWithAggregatesFilter | string
     price?: IntWithAggregatesFilter | number
     description?: StringWithAggregatesFilter | string
-    url?: StringWithAggregatesFilter | string
+    img?: StringWithAggregatesFilter | string
+    buyUrl?: StringWithAggregatesFilter | string
   }
 
   export type UserCreateInput = {
@@ -3069,7 +3083,8 @@ export namespace Prisma {
     item: string
     price: number
     description: string
-    url: string
+    img: string
+    buyUrl: string
     user: UserCreateNestedOneWithoutWishListInput
   }
 
@@ -3079,14 +3094,16 @@ export namespace Prisma {
     item: string
     price: number
     description: string
-    url: string
+    img: string
+    buyUrl: string
   }
 
   export type WishListUpdateInput = {
     item?: StringFieldUpdateOperationsInput | string
     price?: IntFieldUpdateOperationsInput | number
     description?: StringFieldUpdateOperationsInput | string
-    url?: StringFieldUpdateOperationsInput | string
+    img?: StringFieldUpdateOperationsInput | string
+    buyUrl?: StringFieldUpdateOperationsInput | string
     user?: UserUpdateOneRequiredWithoutWishListNestedInput
   }
 
@@ -3096,7 +3113,8 @@ export namespace Prisma {
     item?: StringFieldUpdateOperationsInput | string
     price?: IntFieldUpdateOperationsInput | number
     description?: StringFieldUpdateOperationsInput | string
-    url?: StringFieldUpdateOperationsInput | string
+    img?: StringFieldUpdateOperationsInput | string
+    buyUrl?: StringFieldUpdateOperationsInput | string
   }
 
   export type WishListCreateManyInput = {
@@ -3105,14 +3123,16 @@ export namespace Prisma {
     item: string
     price: number
     description: string
-    url: string
+    img: string
+    buyUrl: string
   }
 
   export type WishListUpdateManyMutationInput = {
     item?: StringFieldUpdateOperationsInput | string
     price?: IntFieldUpdateOperationsInput | number
     description?: StringFieldUpdateOperationsInput | string
-    url?: StringFieldUpdateOperationsInput | string
+    img?: StringFieldUpdateOperationsInput | string
+    buyUrl?: StringFieldUpdateOperationsInput | string
   }
 
   export type WishListUncheckedUpdateManyInput = {
@@ -3121,7 +3141,8 @@ export namespace Prisma {
     item?: StringFieldUpdateOperationsInput | string
     price?: IntFieldUpdateOperationsInput | number
     description?: StringFieldUpdateOperationsInput | string
-    url?: StringFieldUpdateOperationsInput | string
+    img?: StringFieldUpdateOperationsInput | string
+    buyUrl?: StringFieldUpdateOperationsInput | string
   }
 
   export type IntFilter = {
@@ -3242,7 +3263,8 @@ export namespace Prisma {
     item?: SortOrder
     price?: SortOrder
     description?: SortOrder
-    url?: SortOrder
+    img?: SortOrder
+    buyUrl?: SortOrder
   }
 
   export type WishListAvgOrderByAggregateInput = {
@@ -3257,7 +3279,8 @@ export namespace Prisma {
     item?: SortOrder
     price?: SortOrder
     description?: SortOrder
-    url?: SortOrder
+    img?: SortOrder
+    buyUrl?: SortOrder
   }
 
   export type WishListMinOrderByAggregateInput = {
@@ -3266,7 +3289,8 @@ export namespace Prisma {
     item?: SortOrder
     price?: SortOrder
     description?: SortOrder
-    url?: SortOrder
+    img?: SortOrder
+    buyUrl?: SortOrder
   }
 
   export type WishListSumOrderByAggregateInput = {
@@ -3416,7 +3440,8 @@ export namespace Prisma {
     item: string
     price: number
     description: string
-    url: string
+    img: string
+    buyUrl: string
   }
 
   export type WishListUncheckedCreateWithoutUserInput = {
@@ -3424,7 +3449,8 @@ export namespace Prisma {
     item: string
     price: number
     description: string
-    url: string
+    img: string
+    buyUrl: string
   }
 
   export type WishListCreateOrConnectWithoutUserInput = {
@@ -3462,7 +3488,8 @@ export namespace Prisma {
     item?: StringFilter | string
     price?: IntFilter | number
     description?: StringFilter | string
-    url?: StringFilter | string
+    img?: StringFilter | string
+    buyUrl?: StringFilter | string
   }
 
   export type UserCreateWithoutWishListInput = {
@@ -3514,14 +3541,16 @@ export namespace Prisma {
     item: string
     price: number
     description: string
-    url: string
+    img: string
+    buyUrl: string
   }
 
   export type WishListUpdateWithoutUserInput = {
     item?: StringFieldUpdateOperationsInput | string
     price?: IntFieldUpdateOperationsInput | number
     description?: StringFieldUpdateOperationsInput | string
-    url?: StringFieldUpdateOperationsInput | string
+    img?: StringFieldUpdateOperationsInput | string
+    buyUrl?: StringFieldUpdateOperationsInput | string
   }
 
   export type WishListUncheckedUpdateWithoutUserInput = {
@@ -3529,7 +3558,8 @@ export namespace Prisma {
     item?: StringFieldUpdateOperationsInput | string
     price?: IntFieldUpdateOperationsInput | number
     description?: StringFieldUpdateOperationsInput | string
-    url?: StringFieldUpdateOperationsInput | string
+    img?: StringFieldUpdateOperationsInput | string
+    buyUrl?: StringFieldUpdateOperationsInput | string
   }
 
   export type WishListUncheckedUpdateManyWithoutWishListInput = {
@@ -3537,7 +3567,8 @@ export namespace Prisma {
     item?: StringFieldUpdateOperationsInput | string
     price?: IntFieldUpdateOperationsInput | number
     description?: StringFieldUpdateOperationsInput | string
-    url?: StringFieldUpdateOperationsInput | string
+    img?: StringFieldUpdateOperationsInput | string
+    buyUrl?: StringFieldUpdateOperationsInput | string
   }
 
 

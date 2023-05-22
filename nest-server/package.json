@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-		"generate":"yarn pnpify prisma generate",
+		"generate":"pnpify prisma generate",
 		"migrate":"prisma migrate dev",
     "copy-files": "cpx \"src/config/*.yaml\" dist/config",
     "build": "yarn copy-files && nest build",

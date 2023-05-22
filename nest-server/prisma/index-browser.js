@@ -113,7 +113,8 @@ exports.Prisma.WishListScalarFieldEnum = {
   item: 'item',
   price: 'price',
   description: 'description',
-  url: 'url'
+  img: 'img',
+  buyUrl: 'buyUrl'
 };
 
 
