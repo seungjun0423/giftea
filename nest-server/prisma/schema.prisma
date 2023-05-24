@@ -3,13 +3,32 @@
 
 generator client {
   provider = "prisma-client-js"
+	output = "./"
 }
 
+//데이터 베이스 연동
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
-model giftea {
-	id Int @default(autoincrement()) @id
+model User {
+  id    Int     @default(autoincrement()) @id
+  name  String
+	gender String
+	age Int
+	phone Int
+  email String  @unique
+	wishList WishList[]
+}
+
+model WishList {
+	id    Int     @default(autoincrement()) @id
+	userId Int
+	item String
+	price Int
+	description String
+	img String
+	buyUrl String
+  user   User  @relation(fields: [userId], references: [id])
 }
