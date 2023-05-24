@@ -8,8 +8,10 @@ body:has(.login_modal){
 .login_modal {
 	display: grid;
 	place-items: center;
-	width: 597.39px;
-	height: 791.91px;
+	width: 100%;
+	max-width: 700px;
+	height: 100%;
+	max-height: 792px;
 	background: #FFFFFF;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 	margin:auto;
@@ -23,12 +25,57 @@ body:has(.login_modal){
 }
 
 .login_modal .close_btn {
-	margin-left: 500px;
-	width: 18.08px;
-	height: 26.9px;
+	width: 18px;
+	height: 27px;
 	font-weight: 500;
 	font-size: 25px;
 	color: #1E1E1E;
+}
+
+.login_modal .login_logo {
+	/* margin-left: 80px; */
+	width: 100%;
+	max-width: 294px;
+	height: 100%;
+	max-height: 274px;
+}
+
+.login_modal .input_box {
+	width: 100%;
+	max-width: 437.28px;
+	height: 56.32px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	border-radius: 12px;
+	
+	font-weight: 200;
+	font-size: 20px;
+	color: #918E83;
+	padding-left: 8.61px;
+}
+
+.login_modal .login_btn {
+	width: 100%;
+	max-width: 383.91px;
+	height: 43.71px;
+	background: #F7F7F7;
+	border: 1px solid #E1A3FF;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #ABDDD8;
+
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 22px;
+	color: rgba(0, 0, 0, 0.55);
+}
+
+.login_modal .wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 323px;
+	height: 29px;
+	gap:20px;
 }
 
 .login_modal .under_line {
@@ -51,44 +98,13 @@ body:has(.login_modal){
 	margin-bottom: 70px;
 }
 
-.login_modal .login_logo {
-	margin-left: 90px;
-	width: 294px;
-	height: 274px;
-}
+@media only screen and (max-width: 720px) {
+	.login_modal{
+		max-width: 100%;
+		max-height: 100%;
+	}
 
-.login_modal .input_box {
-	width: 437.28px;
-	height: 56.32px;
-	background: #FFFFFF;
-	border: 1px solid #000000;
-	border-radius: 12px;
-	
-	font-weight: 200;
-	font-size: 20px;
-	color: #918E83;
-	padding-left: 8.61px;
-
-}
-
-.login_modal .login_btn {
-	width: 383.91px;
-	height: 43.71px;
-	background: #F7F7F7;
-	border: 1px solid #E1A3FF;
-	border-radius: 20px;
-	box-shadow: 5px 5px 5px #ABDDD8;
-
-	font-weight: 200;
-	font-size: 18px;
-	line-height: 22px;
-	color: rgba(0, 0, 0, 0.55);
-}
-
-.login_modal .wrapper {
-	display: flex;
-	justify-content: center;
-	width: 323px;
-	height: 29px;
-	gap:20px;
+	.login_modal .input_box {
+		width: 100%;
+	}
 }

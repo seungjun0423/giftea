@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Main />} />
         </Routes>
       </BrowserRouter>
-			<LoginModal isOpenLoginModal ={false}/>
+			<LoginModal isOpenLoginModal ={true}/>
     </>
   );
 }

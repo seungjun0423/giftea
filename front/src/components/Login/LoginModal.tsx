@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 import kakao_login from 'img/kakao_login.png';
 import login_logo from 'img/login_logo.svg';
@@ -10,6 +11,11 @@ type onOff = {
 
 function LoginModal({isOpenLoginModal}: onOff) {
 	
+	const test = async() => {
+		const data = await axios.get("http://localhost:4000/api/v1/users").then(result=>result.data);
+		return data;
+	}
+	console.log(test());
   return isOpenLoginModal ?(
 		<div className='login_modal'>
 			<div className='close_btn'>
