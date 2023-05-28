@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import loginIcon from '../../assets/login.png';
 import mypageIcon from '../../assets/mypage.png';
@@ -26,8 +27,8 @@ function Navbar() {
       </div>
       <hr className="navbar_line" />
       <div className="navbar_menu_container">
-        <div className="navbar_menu">펀딩 중</div>
-        <div className="navbar_menu">펀딩 성공</div>
+        <Link to="funding" className="navbar_menu">펀딩 중</Link>
+        <Link to="complete" className="navbar_menu">펀딩 성공</Link>
       </div>
     </nav>
   );
