@@ -13,7 +13,7 @@ function LoginModal({isOpenLoginModal}: onOff) {
 	
 	const test = async() => {
 		const data = await axios.get("http://localhost:4000/api/v1/users").then(result=>result.data);
-		return data;
+		console.log(data);
 	}
 
 	console.log(test());

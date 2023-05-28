@@ -8,11 +8,7 @@ async function main() {
 	const configService = app.get(ConfigService);
 	const port = configService.get<string>('server.port');
 	
-	app.enableCors({
-		origin: 'http://localhost:3000',
-  	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-  	credentials: true,
-	});
+	app.enableCors()
 
   await app.listen(port);
 }
