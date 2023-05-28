@@ -1,13 +1,15 @@
 body:has(.login_modal){
-	position: fixed;
+	overflow: hidden;
   width: 100%;
   height: 100%;
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .login_modal {
-	display: grid;
-	place-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 22px;
 	width: 100%;
 	max-width: 700px;
 	height: 100%;
@@ -24,7 +26,17 @@ body:has(.login_modal){
   z-index: 99;
 }
 
-.login_modal .close_btn {
+.login_modal .close_btn_box {
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	padding-top: 10px;
+	padding-right: 30px;
+}
+
+.login_modal .close_btn_box .close_btn {
+	border: 0;
+	background-color: transparent;
 	width: 18px;
 	height: 27px;
 	font-weight: 500;
@@ -33,14 +45,23 @@ body:has(.login_modal){
 }
 
 .login_modal .login_logo {
-	/* margin-left: 80px; */
+	margin-left: 80px;
 	width: 100%;
 	max-width: 294px;
 	height: 100%;
 	max-height: 274px;
 }
 
-.login_modal .input_box {
+.login_modal .input_box_wrapper {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 30px);
+	max-width: 450px;
+	align-items: center;
+	gap:20px;
+}
+
+.login_modal .input_box_wrapper .input_box {
 	width: 100%;
 	max-width: 437.28px;
 	height: 56.32px;
@@ -55,7 +76,7 @@ body:has(.login_modal){
 }
 
 .login_modal .login_btn {
-	width: 100%;
+	width: calc(100% - 30px);
 	max-width: 383.91px;
 	height: 43.71px;
 	background: #F7F7F7;
@@ -83,8 +104,13 @@ body:has(.login_modal){
 	align-items: center;
 }
 
+.under_line {
+	width: calc(100% - 250px);
+	justify-content: center;
+}
+
 .under_line .line {
-	width: 200px;
+	width: 100%;
 	height: 0px;
 	border: 0.8px solid #A8A5A5;
 }
@@ -94,17 +120,18 @@ body:has(.login_modal){
 	margin-right: 10px;
 }
 
-.login_modal .kakao_oauth {
+.login_modal .oauth_wrapper .kakao_oauth {
+	width: 100%;
 	margin-bottom: 70px;
 }
 
 @media only screen and (max-width: 720px) {
 	.login_modal{
-		max-width: 100%;
-		max-height: 100%;
+		width: calc(100% - 30px);
+		overflow-x: hidden;
 	}
 
-	.login_modal .input_box {
-		width: 100%;
+	.under_line {
+		width: calc(100% - 120px);
 	}
 }
