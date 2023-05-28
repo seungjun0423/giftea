@@ -16,7 +16,8 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        moduleDirectory: ['node_modules', './src'] // 2023-05-28 "Resolve error: unable to load resolver "node" import/extensions" 에러와 "Missing file extension for" 에러 해결
       }
     },
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx']

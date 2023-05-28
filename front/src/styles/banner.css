@@ -1,0 +1,12 @@
+.banner_img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+.banner_img{
+width: 100%;
+height: auto;
+
+}
+    
+}
