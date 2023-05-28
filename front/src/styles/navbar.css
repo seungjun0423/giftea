@@ -1,0 +1,113 @@
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+  padding-bottom: 5px;
+}
+
+.navbar_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navbar_container > .title {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 67px;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.navbar_icon_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 16px;
+  width: 100%;
+}
+
+.navbar_icon {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar_icon_title {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+.make_funding_menu {
+  color: #3db39e;
+}
+
+.navbar_line {
+  height: 2.64px;
+  background: #ffffff;
+  width: 100%;
+}
+
+.navbar_menu_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_menu {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26.63px;
+}
+
+.navbar_menu + .navbar_menu {
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 720px) {
+  .navbar-container {
+    height: 50px;
+  }
+
+  .navbar_container > .title {
+    font-size: 27px;
+    line-height: 32.68px;
+  }
+
+  .navbar_icon {
+    width: 25px;
+    margin-right: 17px;
+    justify-content: center;
+  }
+
+  .navbar_icon:last-child {
+    display: none;
+  }
+
+  .navbar_icon_title {
+    display: none;
+  }
+
+  .navbar_line {
+    height: 1px;
+    background: #ffffff;
+    width: 100%;
+  }
+
+  .navbar_menu {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22.52px;
+  }
+
+  .navbar_menu + .navbar_menu {
+    margin-left: 50px;
+  }
+}
