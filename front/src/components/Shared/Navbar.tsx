@@ -19,7 +19,7 @@ function Navbar() {
             <div className="navbar_icon_title">마이페이지</div>
           </div>
           <div className="navbar_icon">
-            <img src={makeFundingIcon} alt="make funding icon" className="navbar_icon_img" />
+            <img src={makeFundingIcon} alt="make funding icon" className="navbar_icon_img make_funding_img" />
             <div className="navbar_icon_title make_funding_menu">펀딩 만들기</div>
           </div>
         </div>
