@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Profile() {
+function MakeFunding() {
   return (
     <div className="index">
     </div>
   );
 }
 
-export default Profile;
+export default MakeFunding;
