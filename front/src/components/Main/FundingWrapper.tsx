@@ -8,9 +8,7 @@ function FundingWrapper() {
         <h1 className="main_funding_title">펀딩중</h1>
       </div>
       <div className="main_funding_wrapper">
-        {fundingItems && fundingItems.map((item) => (
-          <FundingItem key={item.title} itemKey={item.title} item={item} />
-        ))}
+        {fundingItems && fundingItems.map((item) => <FundingItem key={item.title} itemKey={item.title} item={item} />)}
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import Main from 'components/Main/index';
 import Navbar from 'components/Shared/Navbar';
+import Footer from 'components/Shared/Footer';
 import Funding from 'components/Funding';
 import FundingComplete from 'components/FundingComplete';
 import Profile from 'components/Profile';
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/funding" element={<Funding/>} />
@@ -21,6 +23,8 @@ function App() {
           <Route path="/my" element={<Profile />} />
           <Route path="/create" element={<MakeFunding />} />
         </Routes>
+      </BrowserRouter>
+      <Footer />
     </>
   );
 }
