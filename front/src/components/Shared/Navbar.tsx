@@ -9,7 +9,9 @@ function Navbar() {
   return (
     <nav>
       <div className="navbar_container">
-        <Link to="/" className="title">GIFTEA</Link>
+        <Link to="/" className="title">
+          GIFTEA
+        </Link>
         <div className="navbar_icon_container">
           <div className="navbar_icon">
             <img src={loginIcon} alt="login icon" className="navbar_icon_img" />
@@ -27,8 +29,12 @@ function Navbar() {
       </div>
       <hr className="navbar_line" />
       <div className="navbar_menu_container">
-        <Link to="funding" className="navbar_menu">펀딩 중</Link>
-        <Link to="complete" className="navbar_menu">펀딩 성공</Link>
+        <Link to="funding" className="navbar_menu">
+          펀딩 중
+        </Link>
+        <Link to="complete" className="navbar_menu">
+          펀딩 성공
+        </Link>
       </div>
     </nav>
   );
