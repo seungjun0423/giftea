@@ -9,6 +9,12 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.button_wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: auto;
+}
+
 .main_funding_item {
   flex: 0 0 auto;
   margin-bottom: 61px;
@@ -41,6 +47,20 @@
   filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
 }
 
+.main_button {
+  font-size: 20px; 
+  font-weight: 600;
+  line-height: 29px; 
+  width: 50%;
+  margin: auto auto 20px auto;
+  padding: 14px 0px; 
+  background-color: white;
+  border-color:#A4A4A4; 
+  border-width: 1px;
+
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 720px) {
   .main_funding_wrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -48,6 +68,11 @@
 
   .main_funding_title {
     text-align: center;
+  }
+
+  .main_button {
+    width: 330px; 
+    margin: auto auto 20px auto; 
   }
 }
 

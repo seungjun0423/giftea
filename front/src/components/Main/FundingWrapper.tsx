@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import FundingItem from './FundingItem';
 
 function FundingWrapper() {
@@ -8,8 +10,15 @@ function FundingWrapper() {
         <h1 className="main_funding_title">펀딩중</h1>
       </div>
       <div className="main_funding_wrapper">
-        {fundingItems && fundingItems.map((item) => <FundingItem key={item.title} itemKey={item.title} item={item} />)}
+        {fundingItems?.map((item) => (
+          <FundingItem key={item.title} itemKey={item.title} item={item} />
+        ))}
       </div>
+      <Link to="/funding">
+        <div className="button_wrapper">
+          <button className="main_button">진행 중인 펀딩 더보기</button>
+        </div>
+      </Link>
     </div>
   );
 }
