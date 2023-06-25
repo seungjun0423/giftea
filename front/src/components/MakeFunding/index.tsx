@@ -1,7 +1,7 @@
 import React from 'react';
 
-function FundingComplete() {
+function MakeFunding() {
   return <div className="index"></div>;
 }
 
-export default FundingComplete;
+export default MakeFunding;
