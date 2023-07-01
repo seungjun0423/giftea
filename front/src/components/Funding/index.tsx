@@ -15,6 +15,7 @@ export default Funding;
 
 const fundingItems = [
   {
+    id: 1,
     title: '올해 선물은 에어팟으로 부탁해',
     description: '아이엠의 생일이 곧 다가오고 있어요! 모두 아이엠이 갖고 싶어하는 에어팟을 선물해주세요.',
     author: '마동석',
@@ -24,6 +25,7 @@ const fundingItems = [
     percentage: 31
   },
   {
+    id: 2,
     title: '올해 선물은 노트북으로 부탁해',
     description: '셔누의 생일이 곧 다가오고 있어요! 모두 셔누가 갖고 싶어하는 노트북을 선물해주세요.',
     author: '이준혁',
@@ -34,6 +36,7 @@ const fundingItems = [
     percentage: 12
   },
   {
+    id: 3,
     title: '올해 선물은 맥북으로 부탁해',
     description: '기현의 생일이 곧 다가오고 있어요! 모두 기현이가 갖고 싶어하는 맥북을 선물해주세요.',
     author: '이범수',
@@ -43,6 +46,7 @@ const fundingItems = [
     percentage: 52
   },
   {
+    id: 6,
     title: '올해 선물은 갤럭시워치로 부탁해',
     description: '형원의 생일이 곧 다가오고 있어요! 모두 형원이가 갖고 싶어하는 갤럭시워치를 선물해주세요.',
     author: '이범수',
@@ -52,6 +56,7 @@ const fundingItems = [
     percentage: 35
   },
   {
+    id: 4,
     title: '올해 선물은 아이패드로 부탁해',
     description: '형원의 생일이 곧 다가오고 있어요! 모두 형원이가 갖고 싶어하는 아이패드를 선물해주세요.',
     author: '고규필',
@@ -61,6 +66,7 @@ const fundingItems = [
     percentage: 68
   },
   {
+    id: 5,
     title: '올해 선물은 애플워치로 부탁해',
     description: '주헌이의 생일이 곧 다가오고 있어요! 모두 주헌이가 갖고 싶어하는 아이패드를 선물해주세요.',
     author: '김민재',

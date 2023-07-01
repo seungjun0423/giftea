@@ -12,6 +12,7 @@
 .funding_item {
   flex: 0 0 auto;
   margin-bottom: 61px;
+  cursor: pointer;
 }
 
 .funding_item .funding_item_image {
