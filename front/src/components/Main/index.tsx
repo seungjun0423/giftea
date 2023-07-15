@@ -1,6 +1,7 @@
 import React from 'react';
-import Banner from './banner';
+
 import FundingWrapper from './FundingWrapper';
+import Banner from './banner';
 
 function Main() {
   return (
