@@ -1,0 +1,110 @@
+.funding_title {
+  width: 330px;
+  font-size: 24px;
+  margin: 20px auto;
+}
+
+.funding_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.funding_item {
+  flex: 0 0 auto;
+  margin-bottom: 61px;
+  cursor: pointer;
+}
+
+.funding_item .funding_item_image {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 330px;
+  height: 188px;
+  border-radius: 8px;
+  filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
+}
+
+.funding_item .funding_item_info {
+  width: 330px; 
+  margin: auto; 
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 10px; 
+}
+
+.funding_item_info .funding_item_info_container {
+  display: flex; 
+}
+
+.funding_item_info .funding_item_info_container .funding_item_percentage {
+  color: #3cbea7;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.funding_item_info .funding_item_info_container .funding_item_price {
+  color: #adb5bd;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.funding_item_info .funding_item_date {
+  color: #3cbea7;
+  background-color: #e7f9f9;
+  border: solid 1px #e7f9f9;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.funding_item .funding_item_title {
+  width: 330px; 
+  margin: 5px auto 0px auto;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.funding_item .funding_item_progress_bar_container {
+  width: 330px; 
+  margin: 5px auto auto auto;
+  background-color: #ddd; 
+  border-radius: 4px; 
+}
+
+.funding_item .funding_item_progress_bar_container .funding_item_progress_bar {
+  text-align: right; 
+  padding-top: 5px; 
+  padding-bottom: 5px; 
+  color: white; 
+  background-color: #3cbea7; 
+  border-radius: 4px;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .funding_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .funding_title {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1024px) {
+  .funding_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

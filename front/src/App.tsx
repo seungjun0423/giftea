@@ -10,6 +10,7 @@ import Profile from 'components/Profile';
 import MakeFunding from 'components/MakeFunding';
 
 import 'styles/index.css';
+import FundingDetail from 'components/FundingDetail';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/funding" element={<Funding />} />
+        <Route path="/funding/:id" element={<FundingDetail />} />
         <Route path="/complete" element={<FundingComplete />} />
         <Route path="/my" element={<Profile />} />
         <Route path="/create" element={<MakeFunding />} />
