@@ -17,7 +17,7 @@ export default function FundingItem({ item, itemKey }: FundingItemProps) {
   const { id, title, imgUrl, percentage } = item;
 
   return (
-    <Link to={`/funding/${id}`}>
+    <Link to={`/funding/${id}`} state={{ item: item }}>
       <div className="main_funding_item" key={itemKey}>
         <img src={imgUrl} alt={title} className="main_funding_item_image" />
         <div className="main_funding_item_title">{title}</div>

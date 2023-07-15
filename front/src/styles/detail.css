@@ -1,0 +1,104 @@
+.funding_detail {
+  margin: 0 10% 30px 10%;
+}
+
+.funding_detail .wrapper {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 100%;
+}
+
+.funding_detail .wrapper img {
+  border-radius: 20px;
+  filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
+  max-width: 100%;
+} 
+
+.funding_detail .title_wrapper {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.funding_detail .funding_detail_price {
+  font-size: 20px; 
+  font-weight: 600;
+}
+
+.funding_detail .funding_detail_info_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.funding_detail .funding_detail_info_container .funding_detail_percentage {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.funding_detail_percentage span {
+  color: #3cbea7;
+}
+
+.funding_detail .funding_detail_date {
+  color: #3cbea7;
+  background-color: #e7f9f9;
+  border: solid 1px #e7f9f9;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.funding_detail .funding_detail_progress_bar_container {
+  width: 100%;
+  margin: 5px auto 20px auto;
+  background-color: #ddd; 
+  border-radius: 8px; 
+}
+
+.funding_detail .funding_detail_progress_bar_container .funding_detail_progress_bar {
+  text-align: right; 
+  padding-top: 5px; 
+  padding-bottom: 5px; 
+  color: white; 
+  background-color: #3cbea7; 
+  border-radius: 8px;
+  height: 7px;
+}
+
+.funding_detail .funding_detail_description {
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+}
+
+.funding_detail button {
+  border: 0; 
+  outline: 0;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.funding_detail .btn_share img {
+  width: 40px;
+}
+
+.funding_detail .funding_detail_transfer_button {
+  background-color: #3cbea7; 
+  color: white; 
+  padding: 10px; 
+  border-radius: 8px; 
+}
+
+.funding_detail .funding_detail_transfer_button:hover {
+  background-color: #e7f9f9; 
+  color: #3cbea7;
+}
+
+.funding_detail .funding_detail_transfer_wrapper {
+  display: flex; 
+  justify-content: end;
+}

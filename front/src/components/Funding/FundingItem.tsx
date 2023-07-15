@@ -26,7 +26,7 @@ export default function FundingItem({ item, itemKey }: FundingItemProps) {
   };
 
   return (
-    <Link to={`/funding/${id}`}>
+    <Link to={`/funding/${id}`} state={{ item: item }}>
       <div className="funding_item" key={itemKey}>
         <img src={imgUrl} alt={title} className="funding_item_image" />
         <div className="funding_item_info">
